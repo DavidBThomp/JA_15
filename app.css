@@ -1,0 +1,74 @@
+/* Font Families
+font-family: 'Iceberg', cursive;
+font-family: 'Tourney', cursive;
+*/
+
+/* Colors */
+:root {
+    --dark-purple: #6F2DBD;
+    --light-purple: #A663CC;
+    --pallet-purple: #B298DC;
+    --pallet-blue: #B8D0EB;
+    --light-blue: #B9FAF8;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-purple);
+    font-family: 'Iceberg', cursive;
+    color: var(--light-blue);
+}
+
+h1,
+h2,
+h2,
+h4,
+h5 {
+    font-family: 'Iceberg', cursive;
+    margin: 0;
+}
+
+/* nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav>ul,
+nav>h2 {
+    width: 500px;
+}
+
+nav>h1 {
+    font-size: 64px;
+}
+
+nav>h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+
+/* main */
+
+
+/* footer */
