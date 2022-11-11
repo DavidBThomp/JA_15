@@ -13,6 +13,7 @@ font-family: 'Tourney', cursive;
 }
 
 
+/* Make fonts relative size */
 
 * {
     box-sizing: border-box;
@@ -70,5 +71,66 @@ nav>ul>li {
 
 /* main */
 
+section {
+    height: 100vh;
+}
+
+.centerSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sectionHold {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+/* Videos */
+/* Keep videos absolute but scale size for mobile? */
+/* Remove videos based on size so that page doesn't scroll horizontally */
+section>video {
+    position: absolute;
+    border-radius: 10%;
+    border: solid var(--light-purple) 5px;
+    z-index: 0;
+}
+
+#vid1 {
+    left: 200px;
+    top: 150px;
+}
+
+#vid2 {
+    left: 500px;
+    top: 400px;
+}
+
+#vid3 {
+    left: 1400px;
+    top: 300px;
+}
+
+#vid4 {
+    left: 1200px;
+    top: 600px;
+}
+
+.sectionText {
+    margin: auto;
+    padding: 50px 150px;
+    text-align: center;
+    background-color: var(--light-purple);
+    z-index: 1;
+    /* This z-index puts it above the videos */
+}
+
+.descText {
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
 
 /* footer */
