@@ -1,3 +1,54 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------------------------------------------------- */
+
 /* Font Families
 font-family: 'Iceberg', cursive;
 font-family: 'Tourney', cursive;
@@ -118,6 +169,27 @@ section>video {
     top: 600px;
 }
 
+#vid5 {
+    left: 100px;
+    top: 450px;
+}
+
+#vid6 {
+    left: 800px;
+    top: 200px;
+}
+
+#vid7 {
+    left: 400x;
+    top: 675px;
+}
+
+#vid8 {
+    left: 1300px;
+    top: 150px;
+}
+
+
 .sectionText {
     margin: auto;
     padding: 50px 150px;
@@ -133,4 +205,38 @@ section>video {
     margin: 20px auto;
 }
 
+section > iframe {
+    /* width: 100%;
+    max-width: 620px; */
+    aspect-ratio: 16/9;
+    padding: 0px 15px;
+    width: 100%;
+    max-width: 900px;
+    min-width: 600px;
+}
+
 /* footer */
+
+footer>ul {
+    list-style-type: none;
+    margin: 0 10%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }}
+
+footer>ul>li {
+    display: inline;
+}
+
+footer {
+    background-color: var(--light-purple);
+    width: 100%;
+    padding: 20px;
+}
