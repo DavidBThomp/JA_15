@@ -74,7 +74,18 @@ body {
     background-color: var(--dark-purple);
     font-family: 'Iceberg', cursive;
     color: var(--light-blue);
+
+
 }
+
+    /* Content overflow from videos */
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+  
 
 h1,
 h2,
@@ -132,6 +143,16 @@ section {
     justify-content: space-around;
 }
 
+.centerSection>img {
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 200px;
+    min-height: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 #sectionHold {
     display: flex;
     justify-content: center;
@@ -147,6 +168,9 @@ section>video {
     border-radius: 10%;
     border: solid var(--light-purple) 5px;
     z-index: 0;
+
+    /* Videos are slightly stretched but cover whole container */
+    object-fit: fill;
 }
 
 #vid1 {
@@ -155,8 +179,8 @@ section>video {
 }
 
 #vid2 {
-    left: 500px;
-    top: 400px;
+    left: 1300px;
+    top: 100px;
 }
 
 #vid3 {
@@ -172,6 +196,7 @@ section>video {
 #vid5 {
     left: 100px;
     top: 450px;
+
 }
 
 #vid6 {
@@ -185,8 +210,13 @@ section>video {
 }
 
 #vid8 {
-    left: 1300px;
-    top: 150px;
+    left: 1700px;
+    top: 500px;
+}
+
+#vid9 {
+    left: 250px;
+    top: 650px;
 }
 
 
@@ -228,7 +258,6 @@ footer>ul {
 
 @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
     }}
 
 footer>ul>li {
