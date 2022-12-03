@@ -284,9 +284,11 @@ footer>ul {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-    }}
+@media only screen and (max-width: 1400px) {
+    nav {
+        flex-direction: column;
+    }    
+}
 
 footer>ul>li {
     display: inline;
@@ -296,4 +298,29 @@ footer {
     background-color: var(--light-purple);
     width: 100%;
     padding: 20px;
+}
+
+
+.hideA {
+    opacity: 0;
+    filter: blur(0);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.hideB {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
