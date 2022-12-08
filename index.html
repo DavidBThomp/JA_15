@@ -168,7 +168,7 @@
                 <img src="images/AF Logo Screenshot.png" alt="" class="purpleBorder" />
                 <img src="images/james_Basketball.png" alt="" class="blueBorder" />
                 <img src="images/james_Gaming.png" alt="" class="purpleBorder" />
-                </div>  
+            </div>
             <h3 class="descText">
                 Gamer, Athlete, Family man. Since xbox360, James has been a gamer his
                 whole life. Halo 3, Totatally acuuratee Battle Grounds, CS:GO, Rocket
@@ -178,10 +178,26 @@
         </section>
 
         <section class="centerSection hideA">
-            <iframe src="https://player.twitch.tv/?video=1649276930&parent=www.afterl1fe.club" frameborder="0"
-                allowfullscreen="true" scrolling="no"></iframe>
+            <!-- <iframe src="https://player.twitch.tv/?video=1649276930&parent=www.afterl1fe.club" frameborder="0"
+                allowfullscreen="true" scrolling="no"></iframe> -->
+
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+
+            <!-- Load the Twitch embed script -->
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+            <script type="text/javascript">
+                new Twitch.Player("twitch-embed", {
+                    channel: "afterl1fe_15",
+                    width: '100%',
+                    height: '100%'
+                });
+            </script>
         </section>
     </main>
+
 
     <footer>
         <ul>
