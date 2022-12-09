@@ -280,7 +280,7 @@ section {
 /* Remove videos based on size so that page doesn't scroll horizontally */
 section>video {
     position: absolute;
-    border-radius: 10%;
+    /* border-radius: 10%; */
     z-index: 0;
 
     /* Videos are slightly stretched but cover whole container */
@@ -341,6 +341,7 @@ section>video {
     background-color: var(--light-purple);
     z-index: 1;
     font-size: 1.5rem;
+    border-radius: 100px;
     /* This z-index puts it above the videos */
 }
 
